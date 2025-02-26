@@ -34,6 +34,31 @@ body {
 .btn:hover {
   opacity: 0.9;
 }
+.control {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+}
+.control__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.control__btn:hover {
+  background: #2e80ce;
+  border: #2e80ce;
+  color: #fff;
+}
+.control-icon--next {
+  rotate: 180deg;
+}
 a {
   /* bo gach chan the a */
   text-decoration: none;
@@ -321,4 +346,57 @@ a {
 }
 .about-content__btn {
   margin-top: 38px;
+}
+.team {
+  padding: 85px 0;
+}
+.team-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.team__list {
+  display: grid;
+  margin-top: 70px;
+  column-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.team__cta {
+  margin-top: 38px;
+}
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1);
+}
+.team-item__thumb {
+  height: 290px;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+.team-item__img-bg {
+  padding-top: 28px;
+  border-radius: 6px;
+  background: #eaf6ff;
+  overflow: hidden;
+}
+
+.team-item__name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+.team-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86; /* 185.714% */
+}
+.team__control {
+  margin-top: 38px;
+  justify-content: center;
 }
